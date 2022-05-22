@@ -29,7 +29,7 @@ public struct CodingStyle {
         }
     ]
 
-    init(wrappedValue: String, coding: CodingCase) {
+    public init(wrappedValue: String, coding: CodingCase) {
         self.value = wrappedValue
         self.codingCase = coding
     }
