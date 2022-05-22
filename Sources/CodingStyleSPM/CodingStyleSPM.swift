@@ -1,9 +1,10 @@
-enum CodingCase {
-    case camel, snake, kebab
-}
-
 @propertyWrapper
 public struct CodingStyle {
+
+    public enum CodingCase {
+        case camel, snake, kebab
+    }
+
     private var value: String
     private let codingCase: CodingCase
     private static let codings: [CodingCase: (String) -> String] = [
